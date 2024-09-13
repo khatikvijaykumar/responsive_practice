@@ -33,7 +33,7 @@
 
 }
 /* logo mobile */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
     #logo{
         float: left;
         margin-left: 0.5rem;
