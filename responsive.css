@@ -1,1 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#header-main-div{
+    width: 100vw; 
+    height: 7vh;
+    border-bottom: 1px solid rgb(178, 230, 240);
+    display: flex;
+    flex-direction: row;
+}
+/* 2 sub div css */
+.subbox-header{
+    height: 7vh;
+   
+}
+/* logo image div */
+#subbox1-header{
+    width: 60vw; 
+    
+}
+/* menu bar side div */
+#subbox2-header{
+    width: 40vw; 
+    
+}
+/* logo image */
+#logo{
+    width: 56px; 
+    height: 7vh;
+    float: right;
+    margin-right: 10rem;
 
+}
+/* logo mobile */
+@media only screen and (max-width: 600px) {
+    #logo{
+        float: left;
+        margin-left: 0.5rem;
+    }
+  }
