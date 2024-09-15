@@ -34,7 +34,7 @@
                 margin-left: 3vw;
                 font-size: 6vmin;
                 font-weight: 900;
-                margin-top: 0.5vh;
+                margin-top: 1.5vh;
                 color:rgb(9, 69, 99)
             }
         
@@ -54,7 +54,7 @@
                 flex-direction: column;
                 width: 20vw;
                 height: 20vmax;
-                font-size: 2.5vmax;
+                font-size: 1.5vmax;
                 display: none; 
                 box-shadow: 1px 1px 5px rgb(211, 209, 209);
                 background-color: white;
