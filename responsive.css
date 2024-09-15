@@ -1,92 +1,95 @@
-*{
-    padding: 0;
-    margin: 0;
-}
-#header-main-div{
-    width: 100vw; 
-    height: 7vh;
-    box-shadow: 1px 1px 5px rgb(216, 216, 216);
-    display: flex;
-    flex-direction: row;
-}
-/* 2 sub div css */
-.subbox-header{
-    height: 7vh;
-   
-}
-/* logo image div */
-#subbox1-header{
-    width: 50vw; 
-    
-}
-/* menu bar side div */
-#subbox2-header{
-    width: 50vw; 
-}
-/* logo image */
-#logo{
-    width: 56px; 
-    height: 7vh;
-    margin-left: 0.5rem;
-    float: right;
-}
 
-#menu-bar{
-    width: 30vw;
-    height: 7vh;
-    list-style-type: none;
-    color: rgb(14, 77, 106);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: end;
-    font-size: 100%;
-    float: right;
-}
-#menu-bar li{
-    padding-left: 1%;
-    padding-right: 1%;
-    cursor: pointer;
-}
-#menu-bar li:hover{
-    border-bottom:3px solid rgb(15, 147, 184);
-}
-#menu-bar li:active{
-    border-bottom:3px solid rgb(17, 0, 255);
-   
-}
-/* -------------responsive header----------------- */
-
-@media only screen and (max-width: 600px) {
-   
-    #menu-bar{
-        width: 20vw;
-        display: inline-block;
-        border-radius: 3px;
-        box-shadow: 1px 1px 5px rgb(167, 167, 167);
-        height: auto;
-        flex-direction: column;
-        background-color: white;
-        font-size: 100%;
-       
+        *{
+            margin:0;
+            padding: 0;
+        }
+        #main{
+              
+               background-color: rgb(255, 255, 255);
+               box-shadow: 1px 0px 5px rgb(181, 179, 179);
+               display: flex;
+               justify-content: space-between;
+               height: 7vh;
+        }
+        #menu{
+                display: inline-block;
+                width: 70vmin;
+                font-size: 2.8vmin;
+                font-weight: 600;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                align-items: flex-end;
+                margin-right: 1vw;
+                /* display: none;  */
+                /* background-color: rgb(130, 76, 76); */
+                padding: 0.5vw;
+                
+                
+            }
+            #btn{
+                display: none;
+            }
+            #logo{
+                margin-left: 3vw;
+                font-size: 6vmin;
+                font-weight: 900;
+                margin-top: 0.5vh;
+                color:rgb(9, 69, 99)
+            }
         
-    }
-   
-    
-    #menu-bar li{
-        align-self: flex-start;
-        margin: auto;
-        text-align: center;
-        padding-top: 5px;
-        display: block;
-       
-    }
-   
 
-    #logo{
         
-        float: left;
-    }
+        @media (max-width:600px) {
+            #main{
+              
+               background-color: rgb(255, 255, 255);
+               box-shadow: 1px 0px 5px rgb(211, 209, 209);
+               display: flex;
+               justify-content: space-between;
+               height: 7vh;
+            }
+            #menu{
+                display: flex;
+                flex-direction: column;
+                width: 20vw;
+                height: 20vmax;
+                font-size: 2.5vmax;
+                display: none; 
+                box-shadow: 1px 1px 5px rgb(211, 209, 209);
+                background-color: white;
+                border-radius: 1.3vw;
+                padding: 0.5vw;
+                position: relative;
+                top: calc(7vh + 1vh);
+                left: calc(55vw - 20vw);
+                text-align: center;
+            }
+            
+            #menu div{
+                 margin: 1vw;
+                 width: 100%;
 
+            }
+            #menu div:active{
+                background-color: grey;
+                border-radius: 0.3vw;
+            }
 
-  }
+            #logo{
+                margin-left: 3vw;
+                font-size: 5.5vmax;
+                font-weight: 900;
+                color:rgb(9, 69, 99)
+            }
+            #btn{
+                display: block;
+                width: 8vmax;
+                margin-right: 1vw;
+                border: none;
+                background-color: white;
+                font-weight: 600;
+            }
+
+        }
+    
